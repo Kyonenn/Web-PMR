@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMR SMKn 1 Kongbeng</title>
+    <link rel="stylesheet" href="STYLE.css">
+</head>
+<body>
+
+<header>
+    <div class="header-logo">
+        <img src="Images/logo-pmr.png" alt="Logo PMR">
+        <div class="header-text">
+            <h1>PMR SMKn 1 Kongbeng</h1>
+            <p>Palang Merah Remaja - Berjiwa Kemanusiaan</p>
+            <p class="header-ig">📷 <a href="https://www.instagram.com/pmr_wiraskansakb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@pmr_wiraskansakb</a></p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="#HISTORY">HISTORY</a>
+    <a href="#VISI-MISI">VISI & MISI</a>
+    <a href="#ORGANIZATION">ORGANIZATION</a>
+    <a href="#DOCUMENTATION">DOCUMENTATION</a>
+</nav>
+
+<section id="HISTORY">
+    <h2>HISTORY</h2>
+    <p>Palang Merah Remaja (PMR) SMKN 1 Kongbeng pertama kali berdiri pada 11 Agustus 2003 sebagai wadah pengembangan jiwa kepedulian dan kemanusiaan bagi siswa. Sejak 24 Februari 2022, PMR SMKN 1 Kongbeng mulai menjalin kerja sama dengan PMI Provinsi Kalimantan Timur untuk memperkuat peran dan kualitas kegiatan kepalangmerahan di lingkungan sekolah</p>
+</section>
+
+<section id="VISI-MISI">
+    <h2>VISI & MISI</h2>
+    <h3>Visi:</h3>
+    <p>Membentuk murid SMKn 1 Kongbeng menjadi relawan muda yang berjiwa kemanusiaan, terampil dan juga berakhlak mulia berlandaskan 7 prinsip dasar dan tribakti PMR dan menjunjung tinggi nilai-nilai pancasila.</p>
+    <h3>Misi:</h3>
+    <ul>
+        <li>Mewujudkan anggota PMR yang disiplin ilmu akhlak dan waktu.</li>
+        <li>Membentuk jiwa relawan yang sigap dan juga tanggap.</li>
+        <li>Menciptakan rasa kemanusiaan dan kepedulian yang tinggi terhadap sesama.</li>
+        <li>Memberikan pengabdian yang tinggi kepada masyarakat dan sekolah.</li>
+        <li>Menjaga nama baik PMR unit SMKn 1 Kongbeng baik di dalam maupun di luar sekolah.</li>
+    </ul>
+</section>
+
+<section id="ORGANIZATION">
+    <h2>STRUCTURE</h2>
+    <div class="org-grid">
+        <div class="org-card">
+            <img src="Images/Radit.jpeg" alt="Ketua Radit Nurdianto">
+            <h3>Ketua</h3>
+            <p>Radit Nurdianto</p>
+        </div>
+        <div class="org-card">
+            <img src="Images/Evan.jpeg" alt="Wakil Ketua Evan Manuela Zerlino">
+            <h3>Wakil Ketua</h3>
+            <p>Evan Manuela Zerlino</p>
+        </div>
+        <div class="org-card">
+            <img src="Images/Nisa.jpeg" alt="Sekretaris 1 Maghribatul Nisa S.Y">
+            <h3>Sekretaris 1</h3>
+            <p>Maghribatul Nisa S.Y</p>
+        </div>
+        <div class="org-card">
+            <img src="Images/sekretaris2.jpg" alt="Sekretaris 2 Novi Aurelia">
+            <h3>Sekretaris 2</h3>
+            <p>Novi Aurelia</p>
+        </div>
+        <div class="org-card">
+            <img src="Images/bendahara1.jpg" alt="Bendahara 1 Sagita Setia Ningrum">
+            <h3>Bendahara 1</h3>
+            <p>Sagita Setia Ningrum</p>
+        </div>
+        <div class="org-card">
+            <img src="Images/Melani.jpeg" alt="Bendahara 2 Melani">
+            <h3>Bendahara 2</h3>
+            <p>Melani</p>
+        </div>
+    </div>
+</section>
+
+<section id="DOCUMENTATION">
+    <h2>DOCUMENTATION & ACHIEVEMENTS</h2>
+    <p>Berikut dokumentasi kegiatan dan prestasi PMR SMKN 1 Kongbeng selama periode tahun ajaran 2025-2026:</p>
+    
+    <div class="gallery-container">
+        <div class="gallery-carousel" id="carousel">
+            <div class="gallery-item">
+                <img src="Images/PMR 2.webp" alt="Dokumentasi PMR 1">
+                <h4>Kegiatan 1</h4>
+                <p>Lomba Jumbara di Sangatta</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Images/PMR 3.webp" alt="Dokumentasi PMR 2">
+                <h4>Kegiatan 2</h4>
+                <p>Lomba Jumbara di Sangatta</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Images/PMR 4.webp" alt="Dokumentasi PMR 3">
+                <h4>Kegiatan 3</h4>
+                <p>Lomba Jumbara di Sangatta</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Images/PMR 5.webp" alt="Dokumentasi PMR 4">
+                <h4>Kegiatan 4</h4>
+                <p>Lomba Jumbara di Sangatta</p>
+            </div>
+        </div>
+        <button class="slider-btn prev" onclick="scrollCarousel(-1)">&#10094;</button>
+        <button class="slider-btn next" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 PMR SMKn 1 Kongbeng. By Kionnn</p>
+</footer>
+
+<script>
+// ========== NAVBAR HIDE ON SCROLL DOWN ==========
+let lastScrollTop = 0;
+const nav = document.querySelector('nav');
+
+window.addEventListener('scroll', function() {
+    let currentScroll = window.scrollY;
+    
+    if (currentScroll > lastScrollTop && currentScroll > 100) {
+        nav.style.transform = 'translateY(-100%)';
+    } else {
+        nav.style.transform = 'translateY(0)';
+    }
+    
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
+
+// ========== SMOOTH SCROLL GLOBAL ==========
+let isScrolling = false;
+let targetScroll = window.scrollY;
+const scrollSpeed = 0.08;
+let wheelEnabled = true;
+
+window.addEventListener('wheel', (e) => {
+    if (!wheelEnabled) return;
+    
+    targetScroll += e.deltaY * 0.6;
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    targetScroll = Math.max(0, Math.min(targetScroll, maxScroll));
+    
+    if (!isScrolling) {
+        isScrolling = true;
+        smoothScrollAnimation();
+    }
+    
+    e.preventDefault();
+}, { passive: false });
+
+function smoothScrollAnimation() {
+    const currentScroll = window.scrollY;
+    const diff = targetScroll - currentScroll;
+    
+    if (Math.abs(diff) > 0.5) {
+        window.scrollBy(0, diff * scrollSpeed);
+        requestAnimationFrame(smoothScrollAnimation);
+    } else {
+        window.scrollBy(0, diff);
+        isScrolling = false;
+    }
+}
+
+// ========== SMOOTH SCROLL UNTUK NAVBAR ANCHOR ==========
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        wheelEnabled = false;
+        isScrolling = false;
+        targetScroll = window.scrollY;
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            const targetPos = targetElement.offsetTop - 100;
+            const startPos = window.scrollY;
+            const distance = targetPos - startPos;
+            const duration = 800;
+            let start = null;
+            
+            function animation(currentTime) {
+                if (start === null) start = currentTime;
+                const elapsed = currentTime - start;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                const ease = progress < 0.5 
+                    ? 2 * progress * progress 
+                    : -1 + (4 - 2 * progress) * progress;
+                
+                window.scrollTo(0, startPos + distance * ease);
+                
+                if (progress < 1) {
+                    requestAnimationFrame(animation);
+                } else {
+                    wheelEnabled = true;
+                }
+            }
+            
+            requestAnimationFrame(animation);
+        }
+    });
+});
+
+// ========== CAROUSEL SLIDER ==========
+function scrollCarousel(direction) {
+    const carousel = document.getElementById('carousel');
+    const scrollAmount = 380;
+    carousel.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+    });
+}
+</script>
+
+</body>
+</html>
